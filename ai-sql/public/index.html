@@ -5,6 +5,15 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self' https://apis.example.com;      /* Allow resources from the same origin and a specific API domain */
+  script-src 'self' 'unsafe-inline' 'unsafe-eval';  /* Allow inline scripts and eval (if necessary) */
+  style-src 'self' 'unsafe-inline';                 /* Allow inline styles */
+  img-src 'self' data:;                            /* Allow images from the same origin and data: URIs */
+  font-src 'self' data:;                           /* Allow fonts from the same origin and data: URIs */
+">
+
+
     <meta
       name="description"
       content="Web site created using create-react-app"

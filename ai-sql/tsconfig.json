@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["node", "openai"],
     "target": "es5",
     "lib": [
       "dom",
